@@ -1,0 +1,239 @@
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  background: #e9e9e9;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.address-container {
+  height: 55%;
+  width: 30vmax;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 10 15px 10px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#Time {
+  width: 90%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+/* #search-ride {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  background: #000;
+  border-radius: 5px;
+  color: #faf7f7;
+  font-size: 1.5vw;
+  box-sizing: border-box;
+} */
+
+.address-container input {
+  width: 90%;
+  padding: 15px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 1.3vmax;
+  background: #faf7f7;
+}
+.Ride-section {
+  height: 99.5%;
+  width: 50vmax;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Ride-info.selected {
+  border: 3px solid black;
+}
+
+
+.Ride-info{
+  height: 7%;
+  padding: 7%;
+  width: 79%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.Ride-section > div > img {
+  height: 150px;
+  width: 150px;
+}
+.Ride-section > div > div {
+  display: flex;
+  justify-content: space-around;
+  width: 77%;
+}
+.info > h3 {
+  font-size: 2vw;
+}
+
+.info > p {
+  font-size: 1.3vw;
+}
+
+
+.bookNow{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:fixed;
+    bottom:15px;
+    background: #ffffff;
+    height: 15%;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: -1px 4px 30px -1px black;
+   
+
+}
+.bookNow>h6{
+font-size: 1.6vw;
+}
+.Button{
+   width: 15vw;
+   height: 3vw;
+   background: #000;
+   color: #ffffff;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-decoration: none;
+   
+}
+
+/*----------------*/
+@media (max-width: 1350px) {
+  .main-container {
+    height: 100vh;
+    width: 100vw;
+    background: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: scroll;
+    position: sticky;
+  }
+
+  .address-container {
+    background: #ffffff;
+    height: auto;
+    width: 90%;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 3%;
+    position: fixed;
+    top: -1%;
+  }
+  .Ride-section {
+    background: #ffffff;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Ride-section > div {
+    cursor: pointer;
+    height: 6%;
+    padding-block: 1%;
+    width: 79%;
+    border: 2px solid rgb(206, 201, 201);
+    border-radius: 8px;
+    margin-top: 5px;
+  }
+
+  .Ride-section > div > img {
+    height: 20vw;
+    width: 20vw;
+  }
+  .Ride-section > div > div {
+    display: flex;
+    justify-content: space-around;
+    width: 77%;
+  }
+  .info > h3 {
+    font-size: 4vw;
+  }
+
+  .info > p {
+    font-size: 2.3vw;
+  }
+  .Ride-section > div > div > h2 {
+    font-size: 3.8vw;
+  }
+
+
+
+  .bookNow{
+ 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position:fixed;
+    bottom:15px;
+    background: #ffffff;
+    height: 15%;
+    width: 40%;
+    border-radius: 10px;
+    border:2px solid grey;
+    box-shadow: -1px 4px 30px -1px black;
+   
+
+}
+.bookNow>h6{
+font-size: 3.3vw;
+}
+.Button{
+   width: 21vw;
+   height: 5vw;
+   background: #000;
+   color: #ffffff;
+   border-radius: 5px;
+   font-size: 2.3vw;
+   
+}
+
+
+
+
+
+  /* #search-ride {
+    width: 50%;
+    padding: 4px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    background: #000;
+    border-radius: 5px;
+    color: #faf7f7;
+    font-size: 3vw;
+    box-sizing: border-box;
+  } */
+}

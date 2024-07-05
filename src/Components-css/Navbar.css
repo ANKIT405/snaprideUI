@@ -1,0 +1,100 @@
+.navbar {
+  height: 10vh;
+  width: 100%;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  position: fixed;
+
+  border-bottom: 1px solid rgb(107, 99, 99);
+}
+
+.title {
+  color: aliceblue;
+  font-family: "Major Mono Display";
+  font-size: 2vmax;
+  font-weight: 100;
+  color: rgb(248, 248, 147);
+  cursor: none;
+}
+
+#S {
+  color: yellow;
+}
+#R {
+  color: rgb(252, 119, 119);
+}
+
+.L2 {
+  color: rgb(255, 242, 0);
+}
+
+.L1 {
+  color: rgb(255, 0, 0);
+}
+
+footer {
+  background: #000;
+
+  padding: 20px 0;
+  text-align: center;
+  height: 10vmax;
+  margin-top: 15px;
+  border-top: 5px solid white;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-contact p,
+.footer-contact a {
+  margin: 5px 0;
+  color: white;
+  text-decoration: none;
+  font-size: 1.5vmax;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+.footer-links {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+
+  font-size: larger;
+  align-items: center;
+}
+
+.footer-links a {
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 600px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
+  .footer-contact {
+    text-align: left;
+  }
+
+  .footer-links {
+    margin-top: 0;
+  }
+}

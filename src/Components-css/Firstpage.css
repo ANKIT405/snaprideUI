@@ -1,0 +1,135 @@
+.main-div {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  justify-content: space-evenly;
+  padding-top: 100px;
+  /* background: #000;*/
+}
+
+@media (max-width: 1151px) {
+  .main-div {
+    flex-wrap: wrap;
+    font-size: smaller;
+  }
+  .second-image {
+    margin: 9%;
+    padding: 12%;
+    background-image: url("../Images/ride-image2.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+.child-2 > img {
+  margin-top: 8vw;
+  border-top-left-radius: 10vmax;
+  border-bottom-right-radius: 10vmax;
+  max-height: 40vmax;
+  max-width: 40vmax;
+}
+.child-1 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.child-1 > h1 {
+ 
+  font-size: 4vmax;
+  color: aliceblue;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+/* .child-1 > p {
+  font-size: 1.2vmax;
+  color: aliceblue;
+} */
+
+.child-1 > input {
+  height: 1.7em;
+  box-sizing: border-box;
+  width: 80%;
+  font-size: 1.5em;
+  margin-top: 7px;
+  border-radius: 8px;
+  padding-left: 8px;
+  outline: none;
+  font-weight: 100;
+}
+
+.child-1 > button {
+  height: 2.2em;
+  width: 8vmax;
+  margin-top: 20px;
+  margin-left: 3.5px;
+  font-size: 1.2vmax;
+  border-radius: 8px;
+}
+
+/* CSS */
+.child-1 > button {
+  align-items: center;
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  justify-content: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.child-1 > button:active,
+.child-1 > button:hover {
+  border: 1px solid rgb(109, 255, 109);
+}
+
+.second-image {
+  margin: 8%;
+  padding: 10%;
+  height: 505px;
+  background-image: url("../Images/ride-image2.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 500cm;
+  display: flex;
+  justify-content: flex-start;
+  background-position: center;
+}
+.second-image > h2 {
+  margin-left: -19%;
+  -webkit-text-stroke-width: 1.2px;
+  -webkit-text-stroke-color: rgb(227, 245, 158);
+  width: 50%;
+
+  font-size: 3vw;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4%;
+}
+
+@media (max-width: 770px) {
+  .second-image > h2 {
+    margin-left: -19%;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: rgb(251, 251, 251);
+    width: 50%;
+    font-size: 3.5vw;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30%;
+  }
+}
