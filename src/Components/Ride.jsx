@@ -26,7 +26,7 @@ const Ride = () => {
       let Minute=+Current_Time.getMinutes()
       let Hour=+Current_Time.getHours()
       let AmPm=Hour>12?"PM":"AM"
-      sessionStorage.setItem("Pick me",Hour+":"+Time.current.value+Minute+" "+AmPm)
+      sessionStorage.setItem("Pick me",Time.current.value)
       sessionStorage.setItem("Passenger",Passenger.current.value)
       navigate_to_Payment("/Payment");
     } else if (!input1.current.value || !input2.current.value) {
