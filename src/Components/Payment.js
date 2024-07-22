@@ -6,7 +6,7 @@ const Payment = () => {
           body:JSON.stringify({
             Pickup:sessionStorage.getItem("inp1"),
             Destination:sessionStorage.getItem("inp2"),
-            Time:sessionStorage.getItem("Pick me"),
+            Time:sessionStorage.getItem("Pick me:"),
             Passenger:sessionStorage.getItem("Passenger")
           })
         }
